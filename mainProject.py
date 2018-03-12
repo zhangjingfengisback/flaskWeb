@@ -10,11 +10,11 @@ bootstrap = Bootstrap(app)
 
 @app.route('/')
 def index():
-    return render_template('index.htlm')
+    return render_template('index.html')
 
 @app.route('/user/<name>')
 def user(name):
-    return render_template('user.htlm',name=name)
+    return render_template('user.html',name=name)
 
 if __name__ == '__main__':
     manager.run()
