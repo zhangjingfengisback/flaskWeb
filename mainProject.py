@@ -42,6 +42,7 @@ def send_email(to,subject,template,**kwargs):
     return thr
 
 
+
 class Role(db.Model):
     __tablename__ = 'roles'
     id = db.Column(db.Integer,primary_key=True)
